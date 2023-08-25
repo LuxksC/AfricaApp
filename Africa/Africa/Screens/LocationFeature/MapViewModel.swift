@@ -1,29 +1,29 @@
 //
-//  VideoListViewModel.swift
+//  MapViewModel.swift
 //  Africa
 //
-//  Created by Lucas de Castro Souza on 22/08/23.
+//  Created by Lucas de Castro Souza on 24/08/23.
 //
 
 import Foundation
 
-class VideoListViewModel: ObservableObject {
+class MapViewModel: ObservableObject {
     
     // MARK: - Published Variables
-    @Published private(set) var videos: [Video] = []
+    @Published private(set) var locations: [ParkLocation] = []
     @Published private(set) var isLoading: Bool = true
     @Published private(set) var errorMessage: String?
     
     // MARK: - UseCases
-    private let videoUseCase: VideoUseCaseProtocol
+    private let locationUseCase: LocationUseCaseProtocol
     
     private let dispatchGroup = DispatchGroup()
 
     // MARK: - Initializer
     init(
-        videoUseCase: VideoUseCaseProtocol = VideoUseCase()
+        locationUseCase: LocationUseCaseProtocol = LocationUseCase()
     ) {
-        self.videoUseCase = videoUseCase
+        self.locationUseCase = locationUseCase
         
         loadData()
     }
@@ -32,7 +32,7 @@ class VideoListViewModel: ObservableObject {
     func loadData() {
         isLoading = true
         
-        getVideos()
+        getLocations()
         
         dispatchGroup.notify(queue: .main) { [weak self] in
             guard let self else { return }
@@ -40,21 +40,17 @@ class VideoListViewModel: ObservableObject {
             self.isLoading = false
         }
     }
-    
-    func shuffleVideos() {
-        videos.shuffle()
-    }
-    
+
     // MARK: - Private Methods
-    private func getVideos() {
+    private func getLocations() {
         dispatchGroup.enter()
         
-        videoUseCase.getVideos { [weak self] response in
+        locationUseCase.getLocations { [weak self] response in
             guard let self else { return }
             
             switch response {
             case .success(let response):
-                self.videos = response
+                self.locations = response
             case .failure(let message):
                 self.errorMessage = message
             }

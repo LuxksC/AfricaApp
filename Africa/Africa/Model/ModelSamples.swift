@@ -55,4 +55,32 @@ struct ModelSamples {
         Video(id: "cheetah", name: "Cheetah", headline: "Cheetah walking in the savannah"),
         Video(id: "elephant", name: "Elephant", headline: "African elephant with calf walking")
     ]
+
+    // MARK: - Location / Locations
+    
+    static var location: ParkLocation = ParkLocation(
+        id: "serengeti",
+        name: "Serengeti National Park",
+        image: "map-serengeti",
+        latitude: -2.3333333,
+        longitude: 34.8333333
+    )
+    
+    static var locations: [ParkLocation] = [
+        ParkLocation(
+            id: "serengeti",
+            name: "Serengeti National Park",
+            image: "map-serengeti",
+            latitude: -2.3333333,
+            longitude: 34.8333333
+        ),
+        ParkLocation(
+            id: "kruger",
+            name: "Kruger National Park",
+            image: "map-kruger",
+            latitude: -23.9883848,
+            longitude: 31.5525515
+        )
+    ]
+
 }

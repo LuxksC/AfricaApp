@@ -8,8 +8,31 @@
 import SwiftUI
 
 struct VideoListView: View {
+    @StateObject var viewModel: VideoListViewModel = VideoListViewModel()
+    
     var body: some View {
-        Text("Video List")
+        if viewModel.isLoading {
+            LoaderView()
+        } else if let error = viewModel.errorMessage, !viewModel.isLoading {
+            ErrorView(message: error) { viewModel.loadData() }
+        } else {
+            contentView
+        }
+//        contentView
+    }
+    
+    var contentView: some View {
+        NavigationView {
+            List {
+                ForEach(viewModel.videos) { video in
+                    VideoListItemView(video: video)
+                        .padding(.vertical, 8)
+                        .alignmentGuide(.listRowSeparatorLeading) { _ in
+                            -16
+                        }
+                }
+            }
+        }
     }
 }
 

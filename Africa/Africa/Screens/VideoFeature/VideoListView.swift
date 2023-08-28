@@ -22,7 +22,7 @@ struct VideoListView: View {
         }
     }
     
-    var contentView: some View {
+    private var contentView: some View {
         NavigationView {
             List {
                 ForEach(viewModel.videos) { video in

@@ -21,7 +21,7 @@ struct BrowseView: View {
         }
     }
     
-    var contentView: some View {
+    private var contentView: some View {
         NavigationView {
             List {
                 CoverImageView(covers: viewModel.covers)

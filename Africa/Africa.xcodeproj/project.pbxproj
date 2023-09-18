@@ -63,6 +63,7 @@
 		E6FD56D92A8A7D6700C0BB94 /* ComponentsPreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FD56D82A8A7D6700C0BB94 /* ComponentsPreviewViewModel.swift */; };
 		E6FD56DB2A8A855200C0BB94 /* BrowseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FD56DA2A8A855200C0BB94 /* BrowseViewModel.swift */; };
 		E6FD56DE2A8A962500C0BB94 /* SkeletonUI in Frameworks */ = {isa = PBXBuildFile; productRef = E6FD56DD2A8A962500C0BB94 /* SkeletonUI */; };
+		E6FE5E7E2AA64E3F00B1E4B4 /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FE5E7D2AA64E3F00B1E4B4 /* AnimalGridItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +124,7 @@
 		E6FD56D62A86F1C200C0BB94 /* BrowseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseUseCase.swift; sourceTree = "<group>"; };
 		E6FD56D82A8A7D6700C0BB94 /* ComponentsPreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsPreviewViewModel.swift; sourceTree = "<group>"; };
 		E6FD56DA2A8A855200C0BB94 /* BrowseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewModel.swift; sourceTree = "<group>"; };
+		E6FE5E7D2AA64E3F00B1E4B4 /* AnimalGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGridItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +319,7 @@
 				E67454AC2A99022000582876 /* VideoPlayerView.swift */,
 				E6EA4CC02A9935ED002D3900 /* MapAnotationView.swift */,
 				E6EA4CC22A9CF2B5002D3900 /* MotionAnimationView.swift */,
+				E6FE5E7D2AA64E3F00B1E4B4 /* AnimalGridItemView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 				E6E456B22A952DEF009BB8CF /* VideoListItemView.swift in Sources */,
 				E6FD56A42A8687DF00C0BB94 /* BrowseView.swift in Sources */,
 				E677EC712A93F2F700A53AAF /* InsetMapView.swift in Sources */,
+				E6FE5E7E2AA64E3F00B1E4B4 /* AnimalGridItemView.swift in Sources */,
 				E6FD56D32A86EBC300C0BB94 /* CoverImageView.swift in Sources */,
 				E6D517152A8ABB7000FBA0B7 /* LoaderView.swift in Sources */,
 				E6EA4CBD2A992E6E002D3900 /* LocationUseCase.swift in Sources */,

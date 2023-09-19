@@ -29,8 +29,6 @@ struct GalleryView: View {
         } else {
             contentView
         }
-        
-//        contentView
     }
     
     private var contentView: some View {

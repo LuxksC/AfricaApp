@@ -16,6 +16,8 @@
 		E65B49BC2A9515B5006E7EFC /* VideoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65B49BB2A9515B5006E7EFC /* VideoListViewModel.swift */; };
 		E65D6EE62AB89A8C00814035 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E65D6EE52AB89A8C00814035 /* Stickers.xcassets */; };
 		E65D6EEA2AB89A8C00814035 /* Sticker.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E65D6EE32AB89A8B00814035 /* Sticker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E65D6EF02ABA15F300814035 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65D6EEF2ABA15F300814035 /* CreditsView.swift */; };
+		E65D6EF32ABA183300814035 /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65D6EF22ABA183300814035 /* CenterModifier.swift */; };
 		E67454AB2A9900AE00582876 /* VideoPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67454AA2A9900AE00582876 /* VideoPlayerHelper.swift */; };
 		E67454AD2A99022000582876 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67454AC2A99022000582876 /* VideoPlayerView.swift */; };
 		E677EC672A93CDC100A53AAF /* AnimalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E677EC662A93CDC100A53AAF /* AnimalDetailView.swift */; };
@@ -103,6 +105,8 @@
 		E65D6EE32AB89A8B00814035 /* Sticker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Sticker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E65D6EE52AB89A8C00814035 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		E65D6EE72AB89A8C00814035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E65D6EEF2ABA15F300814035 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		E65D6EF22ABA183300814035 /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
 		E67454AA2A9900AE00582876 /* VideoPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerHelper.swift; sourceTree = "<group>"; };
 		E67454AC2A99022000582876 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		E677EC662A93CDC100A53AAF /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
@@ -193,6 +197,14 @@
 			path = Sticker;
 			sourceTree = "<group>";
 		};
+		E65D6EF12ABA182100814035 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				E65D6EF22ABA183300814035 /* CenterModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
 		E67454A92A99009B00582876 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +234,7 @@
 		E69CC8A82A8684E200D3AE08 /* Africa */ = {
 			isa = PBXGroup;
 			children = (
+				E65D6EF12ABA182100814035 /* Modifier */,
 				E67454A92A99009B00582876 /* Helper */,
 				E63BD9262A8D1224008C292D /* Styles */,
 				E6FD56D52A86F13300C0BB94 /* UseCases */,
@@ -360,6 +373,7 @@
 				E6EA4CC02A9935ED002D3900 /* MapAnotationView.swift */,
 				E6EA4CC22A9CF2B5002D3900 /* MotionAnimationView.swift */,
 				E6FE5E7D2AA64E3F00B1E4B4 /* AnimalGridItemView.swift */,
+				E65D6EEF2ABA15F300814035 /* CreditsView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -520,6 +534,8 @@
 				E677EC6F2A93EF5C00A53AAF /* FactsInsetView.swift in Sources */,
 				E67454AD2A99022000582876 /* VideoPlayerView.swift in Sources */,
 				E677EC672A93CDC100A53AAF /* AnimalDetailView.swift in Sources */,
+				E65D6EF02ABA15F300814035 /* CreditsView.swift in Sources */,
+				E65D6EF32ABA183300814035 /* CenterModifier.swift in Sources */,
 				E67454AB2A9900AE00582876 /* VideoPlayerHelper.swift in Sources */,
 				E6FD56DB2A8A855200C0BB94 /* BrowseViewModel.swift in Sources */,
 				E6EA4CC72A9CFECA002D3900 /* GalleryUseCase.swift in Sources */,

@@ -21,14 +21,14 @@ struct BrowseView: View {
     // MARK: - Body
 
     var body: some View {
-        if viewModel.isLoading {
-            LoaderView()
-        } else if let error = viewModel.errorMessage, !viewModel.isLoading {
-            ErrorView(message: error) { viewModel.loadData() }
-        } else {
-            contentView
-        }
-//        contentView
+//        if viewModel.isLoading {
+//            LoaderView()
+//        } else if let error = viewModel.errorMessage, !viewModel.isLoading {
+//            ErrorView(message: error) { viewModel.loadData() }
+//        } else {
+//            contentView
+//        }
+        contentView
     }
     
     // MARK: - Content
@@ -51,6 +51,9 @@ struct BrowseView: View {
                                 }
                             )
                         }
+                        
+                        CreditsView()
+                            .modifier(CenterModifier())
                     }
                     .listStyle(.plain)
                 } else {
